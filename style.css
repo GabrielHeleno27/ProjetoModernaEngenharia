@@ -162,9 +162,10 @@
 
 /* quem-somos*/
 .quem-somos {
+    margin-left: 10%;
     width: 80%;
     padding: 100px 100px ;
-    background-color: #02519c;
+    background-color: #edf0f9;
     box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
     border-radius: 30px 30px 30px 30px;
 }
@@ -172,8 +173,37 @@
 .quem-somos h2 {
     text-align: center;
     padding: 20px;
+    font-size: 30px;
 }
 
 .quem-somos p {
-    justify-content: center;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.45;
 }
+
+/* valores*/
+.valores {
+    background-color: #02519c;
+    margin-top: 100px;
+}
+
+.valores-content {
+    background: #edf0f9;
+    text-align: center;
+
+}
+.valores-content h3 {
+    padding: 5%;
+    font-size: 30px;
+}
+
+.v1 {
+    padding: 40px 40px;
+    width: 15%;
+    background: salmon;
+    border-radius: 30px ;
+    margin: 10% ;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
+}
+

@@ -221,4 +221,36 @@
     text-align: center;
     box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
 }
+.servicos {
+    padding:40px 0;
+}
 
+.servicos-content {
+    text-align:center;
+    color: #02519c;
+    font-size: 30px; 
+    
+    
+}
+
+.portifolio-container {
+        display:flex;
+        align-items:space-around;
+        flex-wrap:wrap;
+        flex-direction: row;
+        
+}
+
+.portifolio-content-img img{
+   
+    width:45%;
+    margin: 20px 30px;
+    border-radius: 5%;
+}
+.portifolio-content-text {
+    width: 30%;
+    font-size:20px;
+    text-align:right;
+    
+    
+}

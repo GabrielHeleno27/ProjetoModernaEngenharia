@@ -184,26 +184,38 @@
 
 /* valores*/
 .valores {
-    background-color: #02519c;
+    background-color: #edf0f9;
     margin-top: 100px;
 }
 
-.valores-content {
+.conteiner {
     background: #edf0f9;
     text-align: center;
-
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%; 
 }
+
 .valores-content h3 {
     padding: 5%;
     font-size: 30px;
+    background: #edf0f9;
+    text-align: center;
+    
 }
 
 .v1 {
     padding: 40px 40px;
-    width: 15%;
-    background: salmon;
+    width: 20%;
+    background: #edf0f9;
     border-radius: 30px ;
-    margin: 10% ;
+    margin: 5%;
+    font-size: 15px;
+    text-align: center;
     box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
 }
 

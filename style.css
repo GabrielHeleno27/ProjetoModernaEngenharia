@@ -234,23 +234,27 @@
 }
 
 .portifolio-container {
-        display:flex;
-        align-items:space-around;
-        flex-wrap:wrap;
-        flex-direction: row;
+        display:
         
 }
 
 .portifolio-content-img img{
-   
-    width:45%;
-    margin: 20px 30px;
+    width:40%;
+    margin-left:80px;
+    margin-top:30px;
     border-radius: 5%;
+    float: left;
 }
 .portifolio-content-text {
-    width: 30%;
+    width: 45%;
+    margin-top:30px;
+    margin-right:70px;
     font-size:20px;
     text-align:right;
-    
-    
+    padding:100px;
+    float: right;
+
+}
+.portifolio-content-text p {
+    margin-top:20px;
 }

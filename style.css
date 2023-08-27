@@ -203,6 +203,10 @@
     margin-right: 15%;  
 }
 
+.conteiner i {
+    font-size: 25px;
+}
+
 .valores-content h3 {
     padding: 5%;
     font-size: 30px;
@@ -233,10 +237,7 @@
     
 }
 
-.portifolio-container {
-        display:
-        
-}
+
 
 .portifolio-content-img img{
     width:40%;

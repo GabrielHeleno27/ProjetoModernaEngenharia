@@ -197,7 +197,7 @@
     display: flex;
     justify-content: center;
     align-items: space-around;
-    gap: 1em;
+    gap: 0.5em;
     flex-wrap: wrap;
     margin-left: 15%;
     margin-right: 15%;  
@@ -207,9 +207,7 @@
     font-size: 25px;
 }
 
-.conteiner .v1 {
-    font-size: 18px;
-}
+
 
 .valores-content h3 {
     padding: 5%;
@@ -220,12 +218,12 @@
 }
 
 .v1 {
-    padding: 40px 40px;
-    width: 20%;
+    padding: 35px 40px;
+    width: 25%;
     background: #edf0f9;
     border-radius: 30px ;
     margin: 5%;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
 }
@@ -290,3 +288,13 @@
     text-align: left;
     padding: 30px;
 }
+
+/* contato*/ 
+.contato-box {
+    display: flex;
+    align-items: space-between;
+    gap: 80px;
+    
+    
+}
+

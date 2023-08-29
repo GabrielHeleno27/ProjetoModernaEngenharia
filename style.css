@@ -42,8 +42,7 @@ html {
     transition: .3s;
 }
 
-.navbar a:hover,
-.navbar a.active{
+.navbar a:hover{
     color: #00afef;
 
 }

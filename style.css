@@ -60,15 +60,16 @@ html {
 
 .home-image{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-self:space-between;
+ 
+    justify-content: space-between;
+    align-items: space-between;
     width: 500px;
-    height: 500px;
-    background: #02519c;
-    border-radius:  50%;
-    border: 25px solid #fff;
-    outline: 25px solid #02519c;
-    
+    height: 500px;   
+}
+.home-image img {
+    width:100%;
+    margin-left:-60px;
 }
 
 .home-image img {

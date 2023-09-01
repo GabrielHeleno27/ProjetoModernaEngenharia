@@ -79,14 +79,14 @@ html {
 }
 
 .home-content{
-    max-width: 600px;
+    max-width: 800px;
     color: #fff;
     text-align: right;
     
 }
 
 .home-content h1 {
-    font-size: 55px;
+    font-size: 60px;
     line-height: 1.2;
 }
 
@@ -112,7 +112,7 @@ html {
 }
 
 .home-content p {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 20px;
     text-align: justify;
 }
@@ -147,7 +147,7 @@ html {
     margin-left: 20%;
 }
 
-.btn {
+/*.btn {
     padding: 12px 35px;
     background: #00afef;
     border-radius: 40px;
@@ -162,7 +162,7 @@ html {
 
 .btn:hover {
     box-shadow: none;
-}
+}*/
 
 /* quem-somos*/
 .quem-somos {
@@ -191,7 +191,7 @@ html {
 .valores {
     background-color: #edf0f9;
     margin-top: 5%;
-    margin-bottom: 5%;
+    
 }
 
 .conteiner {
@@ -207,7 +207,7 @@ html {
 }
 
 .conteiner i {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 
@@ -230,9 +230,11 @@ html {
     text-align: center;
     box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
 }
+/* Serviços*/
 
 .container2 {
     padding: 60px;
+    background-color: #edf0f9;
 
  }
 
@@ -256,6 +258,7 @@ html {
 .box img {
  width: 50%;
  border-radius:30px;
+ box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.2);
 }
 .content  {
    
@@ -283,6 +286,7 @@ html {
 .box-reverse img {
     width:50%;
     border-radius:30px;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.2);
 }
 .box-reverse p {
     text-align: left;

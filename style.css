@@ -9,32 +9,34 @@
 html {
     scroll-behavior: smooth;
 }
+main {
+    margin: auto;
+}
+html {
+    /* A cada 1rem será considerado 10px*/
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
 
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 1.5% 5%;
     background: #02519c;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
     z-index: 100;
 }
 
 
-.logo {
-    font-size: 25px;
-    color: #02519c;
-    text-decoration: none;
-    font-weight: 700;
-
-}
-
 .navbar a {
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
@@ -44,50 +46,45 @@ html {
 
 .navbar a:hover{
     color: #00afef;
-
 }
 
 .home {
     height: 100vh;
-    background: linear-gradient(-90deg, #02519c 65% ,#fff 35%);
+    /*background: linear-gradient(-90deg, #02519c 65% ,#fff 35%);*/
+    background: linear-gradient(-90deg, #02519c 50% , #fff);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
-
 .home-image{
-    justify-content: space-between;
     width: 400px;
-    height: 350px;   
-    margin-left: 6%;
-    margin-right: 250px;
+    height: 350px; 
+      
 }
 
 .home-image img {
     width:100%;
-    padding-left: -5%;
-    position: relative;
     max-width: 400px;
 }
-
 
 .home-content{
     max-width: 800px;
     color: #fff;
     text-align: right;
-    margin-right: 5%;
 }
 
 .home-content h1 {
-    font-size: 60px;
+    font-size: 5.5rem;
     line-height: 1.2;
 }
 
 .home-content h3{
-    font-size: 36px;
+    font-size: 3.6rem;
     color: transparent;
+    text-shadow: 0 0 4px #00afef;
     -webkit-text-stroke: .5px #00afef;
     background-image: linear-gradient(#00afef, #00afef);
     background-repeat: no-repeat;
@@ -107,7 +104,7 @@ html {
 }
 
 .home-content p {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-top: 20px;
     text-align: justify;
 }
@@ -123,7 +120,7 @@ html {
     background: transparent;
     border: 2px solid #fff;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 2rem;
     color: #00afef;
     text-decoration: none;
     margin-left: 14px;
@@ -146,7 +143,7 @@ html {
     padding: 12px 35px;
     background: #00afef;
     border-radius: 40px;
-    font-size: 17px;
+    font-size: 1.7rem;
     color: #fff;
     text-decoration: none;
     font-weight: 600px;
@@ -174,12 +171,12 @@ html {
     text-align: center;
     padding: 20px;
     color: #00afef;
-    font-size: 35px;
+    font-size: 3.5rem;
 }
 
 .quem-somos p {
     text-align: justify;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1.45;
 }
 
@@ -203,14 +200,14 @@ html {
 }
 
 .conteiner i {
-    font-size: 30px;
+    font-size: 3rem;
     align-items: center;
 }
 
 .valores-content h3 {
     padding: 4%;
     color: #00afef;
-    font-size: 45px;
+    font-size: 4.5rem;
     background: #edf0f9;
     text-align: center;
 }
@@ -221,7 +218,7 @@ html {
     background: #edf0f9;
     border-radius: 30px ;
     margin: 4%;
-    font-size: 20px;
+    font-size: 2rem;
     text-align: center;
     box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
 }
@@ -241,12 +238,12 @@ html {
 /* serviços box lado esquerdo*/
  .box h2{
     color: #00afef;
-    font-size: 30px;
+    font-size: 3rem;
     text-align: right;
 }
 .box p {
     text-align: right;
-    font-size: 20px;
+    font-size: 2rem;
 }
 .box {
     display: flex;
@@ -280,11 +277,11 @@ html {
 }
 .box-reverse h2{
     color: #00afef;
-    font-size: 30px;
+    font-size: 3rem;
 }
 .box-reverse p {
     text-align: left;
-    font-size: 20px;
+    font-size: 2rem;
 }
 .box-reverse img {
     width:50%;
@@ -326,7 +323,7 @@ html {
     background: transparent;
     border: 4px solid #edf0f9;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 2rem;
     color: #00afef;
     text-decoration: none;
     margin-left: 15px;
@@ -336,7 +333,7 @@ html {
 }
 
 .contato-conteiner1 i {
-    font-size: 28px;
+    font-size: 2.8rem;
 }
 
 .contato-conteiner1 a:hover {
@@ -348,11 +345,11 @@ html {
 
 .contato-conteiner1 h2 {
     color: #00afef;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 .contato-conteiner1 h3 {
-    font-size: 36px;
+    font-size: 3.6rem;
     color: #02519c;
 }
 
@@ -379,7 +376,7 @@ html {
 }
 .conteiner-clientes h2 {
     color: #00afef;
-    font-size: 36px;
+    font-size: 3.6rem;
     padding: 1%;
 }
 

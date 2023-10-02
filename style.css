@@ -52,7 +52,7 @@ body {
 .home {
     height: 100vh;
     /*background: linear-gradient(-90deg, #02519c 65% ,#fff 35%);*/
-    background: linear-gradient(-90deg, #00afef 50% , #fff);
+    background: linear-gradient( #00afef 20% , #edf0f9);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,7 +111,7 @@ body {
 .home-content p {
     font-size: 1.8rem;
     margin-top: 20px;
-    text-align: justify;
+    text-align: right;  
 }
 
 .home-sci {
@@ -409,9 +409,26 @@ footer p {
 
 /* ----------------- @mediaqueries -----------------*/
 
+@media (max-width: 1280px){
+    .container2 {
+        flex-direction: column;
+    }
+}
 @media (max-width: 768px) {
     html  {
         font-size: 50%;
+    }
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content ,.home-content p {
+        text-align: center;
+    }
+
+    .home-image img {
+        align-items: center;
+        order: -1;
     }
 }
 @media (max-width: 650px){

@@ -82,10 +82,6 @@ body {
     line-height: 1.2;
 }
 
-.principal {
-    visibility: hidden;
-}
-
 .home-content h3{
     font-size: 3.6rem;
     color: transparent;
@@ -162,11 +158,10 @@ body {
 }*/
 
 /* quem-somos*/
-.quem-somos {
+.quem-somos-content {
     margin-left: 10%;
-    margin-top: -2%;
     width: 80%;
-    padding: 100px 100px ;
+    padding: 10% ; /*colocar em porcentagem*/
     background-color: #edf0f9;
     box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
     border-radius: 30px 30px 30px 30px;
@@ -198,7 +193,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: space-between;
-    gap: 0.5em;
+    gap: 0.5rem;
     flex-wrap: wrap;
     margin-left: 5%;
     margin-right: 5%;  
@@ -218,8 +213,8 @@ body {
 }
 
 .v1 {
-    padding: 35px 40px;
-    width: 300px;
+    padding: 3.5rem 4rem;
+    width: 30rem;
     background: #edf0f9;
     border-radius: 30px ;
     margin: 4%;
@@ -236,7 +231,7 @@ body {
 
 /* Serviços*/
 .container2 {
-    padding: 60px;
+    padding: 5%;
     background-color: #edf0f9;
 
  }
@@ -264,7 +259,7 @@ body {
  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.2);
 }
 .content  {
-    padding: 30px;
+    padding: 2%;
 }
 
 .content p {
@@ -304,12 +299,12 @@ body {
 /* contato*/ 
 .contato-box {
     display: flex;
-    padding-top: 3%;
+    padding-top: 5%;
     padding-bottom: 3%;
     padding-right: 5%;
     padding: 5%;
     align-items: center;
-    background-color: #00afef;
+    background: linear-gradient(0deg, #00afef 50% , #edf0f9);
     justify-content: space-between;
     gap: 4rem;
 }
@@ -362,7 +357,7 @@ body {
 
 /* clientes*/
 .conteiner-clientes-box {
-    background-color: #00afef;
+    background: #00afef;
     padding-bottom: 3%;
 }
 .conteiner-clientes {
@@ -378,10 +373,10 @@ body {
 
 .clientes-galery {
     display: flex;
+    
 }
 .clientes-img {
-    
-    justify-content: center;
+    justify-content: space-between;
     padding: 5%;
 }
 
@@ -410,9 +405,20 @@ footer p {
 /* ----------------- @mediaqueries -----------------*/
 
 @media (max-width: 1280px){
-    .container2 {
+    .box , .box-reverse{
+        display: flex;
         flex-direction: column;
     }
+    .box p ,.box h2 , .box-reverse p, .box-reverse h2{
+        text-align: center;
+    }
+    .box img ,.box-reverse img {
+        min-width: 500px;
+    }
+}
+
+@media (max-width: 850px){
+    
 }
 @media (max-width: 768px) {
     html  {
@@ -421,16 +427,19 @@ footer p {
     .home {
         flex-direction: column;
     }
-
     .home-content ,.home-content p {
         text-align: center;
     }
-
+    
     .home-image img {
-        align-items: center;
+        max-width: 80%;
         order: -1;
+        padding-top: 25%;
+        margin-left: 10%;
     }
 }
 @media (max-width: 650px){
-
+    .contato-box {
+        flex-direction: column;
+    }
 }

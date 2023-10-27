@@ -3,8 +3,16 @@
     window.sr = ScrollReveal({ reset: true });
 
     // home
-    sr.reveal('.h1-home', {duration: 2000});
-    sr.reveal('.h3-home', {duration: 4000});
+    sr.reveal('.home-content', {
+        duration: 2000,
+        delay: 500
+    });
+    sr.reveal('.home-image', {
+        duration: 2000,
+        origin: 'left',
+        distance: '70px',
+        delay: 1000
+    })
     
 
     // quem-somos

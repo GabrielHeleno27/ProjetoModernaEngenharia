@@ -192,7 +192,7 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: space-between;
+    align-items: space-evenly;
     gap: 0.5rem;
     flex-wrap: wrap;
     margin-left: 5%;
@@ -399,7 +399,7 @@ footer p {
 }
 
 /* ----------------- @mediaqueries -----------------*/
-
+/*  % , rem , vh , vw*/ 
 @media (max-width: 1280px){
     .box , .box-reverse{
         display: flex;
@@ -421,6 +421,55 @@ footer p {
         max-width: 18rem;
         min-width: 12rem;
         padding: 1rem;
+    }
+
+    /* Navbar Hambúerguer*/
+    nav {
+        display: none;
+    }
+    .one ,.two ,.three {
+        background-color: #fff;
+        height: 4px;
+        width: 100%;
+        margin: 5px auto;
+
+        transition-duration: 0.4s;
+    }
+    .menu-toogle {
+        width: 35px;
+        height: 30px;
+    }
+    /*Navbar quando ele for clicado*/
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+
+        background-color: #00afef;
+
+        z-index: 10;
+    }
+    .menu-section.on nav {
+        display: block;
+    }
+    .menu-section.on .menu-toogle {
+        position: absolute;
+        right: 0;
+        top: 15px;
+        margin-right: 2%;
+    }
+    /*Transformacao em X*/
+    .menu-section.on .menu-toogle .one:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+    .menu-section.on .menu-toogle .two:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-section.on .menu-toogle .three:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
     }
 }
 @media (max-width: 768px) {

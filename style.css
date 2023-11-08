@@ -21,7 +21,7 @@ body {
     font-size: 1.6rem;
 }
 
-.header {
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -35,8 +35,15 @@ body {
     z-index: 100;
 }
 
+header nav ul {
+    display: flex;
+}
 
-.navbar a {
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
     font-size: 1.8rem;
     color: #fff;
     text-decoration: none;
@@ -61,8 +68,9 @@ body {
 }
 
 .home-image{
-    width: 400px;
-    height: 350px; 
+    max-width: 450px;
+    margin-bottom: 1.5%;
+     
 }
 
 .home-image img {
@@ -159,6 +167,7 @@ body {
 
 /* quem-somos*/
 .quem-somos-content {
+    margin-top: 5%;
     margin-left: 10%;
     width: 80%;
     padding: 10% ; /*colocar em porcentagem*/
@@ -409,7 +418,7 @@ footer p {
         text-align: center;
     }
     .box img ,.box-reverse img {
-        min-width: 500px;
+        min-width: 450px;
     }
 }
 
@@ -423,6 +432,11 @@ footer p {
         padding: 1rem;
     }
 
+    .home-image{
+        max-width: 450px;
+        
+    }
+
     /* Navbar Hambúerguer*/
     nav {
         display: none;
@@ -432,13 +446,14 @@ footer p {
         height: 4px;
         width: 100%;
         margin: 5px auto;
-
+        
         transition-duration: 0.4s;
     }
     .menu-toogle {
         width: 35px;
         height: 30px;
     }
+    
     /*Navbar quando ele for clicado*/
     .menu-section.on {
         position: absolute;
@@ -451,6 +466,10 @@ footer p {
         background-color: #00afef;
 
         z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .menu-section.on nav {
         display: block;
@@ -459,7 +478,7 @@ footer p {
         position: absolute;
         right: 0;
         top: 15px;
-        margin-right: 2%;
+        margin-right: 5%;
     }
     /*Transformacao em X*/
     .menu-section.on .menu-toogle .one:nth-child(1) {
@@ -471,10 +490,20 @@ footer p {
     .menu-section.on .menu-toogle .three:nth-child(3) {
         transform: translateY(-10px) rotate(-45deg);
     }
+    .menu-section.on nav ul {
+        text-align: center;
+        display: block;
+    }
+    .menu-section.on nav a {
+        transition-duration: 0.5s;
+        font-size: 3rem;
+        line-height: 8rem;
+        display: block;
+    }
 }
 @media (max-width: 768px) {
     html  {
-        font-size: 50%;
+        font-size: 45%;
     }
     .home {
         flex-direction: column;
@@ -483,14 +512,19 @@ footer p {
         text-align: center;
     }
     
+    .home-image {
+        margin-top: 12%;
+    }
     .home-image img {
-        max-width: 80%;
+        max-width: 70%;
         order: -1;
-        padding-top: 25%;
         margin-left: 10%;
     }
 }
 @media (max-width: 650px){
+    html  {
+        font-size: 40%;
+    }
     .contato-box {
         flex-direction: column;
     }
